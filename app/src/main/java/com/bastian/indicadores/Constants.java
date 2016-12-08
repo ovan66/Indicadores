@@ -6,7 +6,7 @@ package com.bastian.indicadores;
 
 public class Constants {
 
-    public static final String BASE_URL = "http://mindicador.cl/api";
+    public static final String BASE_URL = "http://mindicador.cl/";
     public static final int STATUS_OK = 200;
     public static final String CONNECTION_SUCCESS = "CONECTION_SUCCES";
     public static final String CONNECTION_ERROR = "CONECTION_ERROR";

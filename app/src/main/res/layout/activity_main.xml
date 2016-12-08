@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -11,7 +12,50 @@
     tools:context="com.bastian.indicadores.MainActivity">
 
     <TextView
+        android:id="@+id/ufTitle"
+        android:text="UF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/ufTitle"
+        android:paddingBottom="16dp"
+        android:id="@+id/ufTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Indicator" />
+
+    <TextView
+        android:id="@+id/dolarTitle"
+        android:text="Dolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ufTv"/>
+
+    <TextView
+        android:paddingBottom="16dp"
+        android:layout_below="@+id/dolarTitle"
+        android:id="@+id/dolaTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Indicator" />
+
+    <TextView
+        android:layout_below="@+id/ipcTitle"
+        android:paddingBottom="16dp"
+        android:id="@+id/ipcTv"
+        android:text="ipc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ipcTitle"
+        android:text="IPC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dolaTv"/>
+
+
+
+
 </RelativeLayout>
